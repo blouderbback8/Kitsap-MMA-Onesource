@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/*
+	KITSAP MMA ONESOURCE V2
+	Author: Brian Louderback
+	Date: 02/04/2019
+*/
+
+/*
+M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules)
+Here is where used a reset style using only the elements I have in my code.
+*/
+article, aside, figcaption, figure, footer, header, image, main, nav, section {
+	display: block;
+}
+
+a, address, article, aside, body, div, footer, header, h1, h2, image, nav, li, ol, p, ul {
+	background: none;
+	border: 0;
+	box-sizing: border-box;
+/*
+M3LO10 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is)
+Here is wher I used -prefix- style browser extensions to eliminate padding and borders.
+*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: borderbox;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav  {
+   text-decoration: none;
+}
+body {
+   line-height: 1em;
+}

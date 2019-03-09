@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/*
+	KITSAP MMA ONESOURCE V3
+    Author: Brian Louderback
+    Date: 02/19/2019
+	
+	Filename: styles.css
+*/
+	
+html {
+
+	font-family: Jazz LET, fantasy, sans-serif;
+	color: white;
+}
+	
+
+body {
+	background-image: url(mma-cage-background.png);
+	box-shadow: rgba(192, 192, 192, 0.4) 5px -5px 5px 10px;
+	color: white;
+	font-family: Jazz LET, fantasy, sans-serif;
+	max-width: 960px;
+	min-width: 640px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 30px;
+}
+
+header {
+	color: white;
+	text-align: center;
+}
+
+body > header > img {
+	display: block;
+	width: 100%;
+	transform: scale(1, 0.8);
+	
+}
+ 
+ h1 {
+	background-image: url(mma-cage-background.png);
+	font-family: Verdana, Geneva, sans-sarif;
+	font-size: 1.2em;
+	text-align: center;
+	background: linear-gradient(#eee, #333);
+	background: -webkit-linear-gradient(#eee, #333);
+	-webkit-background-clip: text;
+ }
+  
+ h2 {
+	background-image: url(mma-cage-background.png);
+	font-family: Verdana, Geneva, sans-sarif;
+	font-size: 1em;
+	text-align: center;
+	background: linear-gradient(#eee, #333);
+	background: -webkit-linear-gradient(#eee, #333);
+	-webkit-background-clip: text;
+ }
+ 
+ h3 {
+	 background-image: url(mma-cage-background.png);
+	font-family: Verdana, Geneva, sans-sarif;
+	font-size: 1em;
+	text-align: center;
+	background: linear-gradient(#eee, #333);
+	background: -webkit-linear-gradient(#eee, #333);
+	-webkit-background-clip: text;
+ }
+ 
+ figcaption {
+	background-image: url(mma-cage-background.png);
+font-family: Jazz LET, fantasy, sans-serif;
+	font-size: 1em;
+	text-align: center;
+
+	background: linear-gradient(#eee, #333);
+	background: -webkit-linear-gradient(#eee, #333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+ }
+
+ footer {
+	font-family: Verdana, Geneva, sans-sarif;
+	font-size: 0.85em;
+	color: white;
+	position: fixed;
+ }
+  nav {
+	height: 30px;
+	display: block;
+	color: white;
+  }
+  
+nav.horizontalNavigation a {
+	color: grey;
+	display: block;
+	float: left;
+	width: 20%;
+	padding: .5em;
+	text-align: center;
+    font-family: Impact, sans-sarif;
+    font-size: 1em;
+    line-height: 1.2em;
+	
+}  
+
+section#leftColumn {
+	clear: left;
+	float: left;
+	padding: 1em;
+	width: 50%;
+}
+
+section#RightColumn {
+	clear: right;
+	float: right;
+	padding: 1em;
+	width: 50%;
+}
+
+
+
+.Left_Fist {
+	position: absolute;
+	top: 80px;
+	left: 20px;
+	width: 13%;
+	height: 27%;
+	opacity: 0.5;
+	transform: skew(18deg, 18deg)
+}
+
+.Right_Fist {
+	position: relative;
+	top: -160px;
+	right: -320px;
+	width: 13%;
+	height: 27%;
+	opacity: 0.5;
+	transform: skew(-18deg, -18deg)
+}
+
+/*M5LO4 Use CSS for pull down menus (CSS)
+Below is where I used CSS for a pull down menu.
+*/
+ul.submenu {
+	display: none;
+}
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+	display: block;
+}
+/*M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML)
+Below until the "@media only and (max-width: 480px)" is the formating of my table with CSS.  I made the background gray, a 5px border dark gray,
+centered the text, made the width 100%, made a 1px border between the td's and th's, and then collapse the borders.*/
+table.prices {
+	background: gray;
+	border: 5px outset rgb(169, 169, 169);
+	text-align: center;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table.prices th, table.prices td {
+	border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+

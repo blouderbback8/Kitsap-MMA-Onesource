@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*
+    
+	KITSAP MMA ONESOURCE V2
+    Author: Brian Louderback
+    Date: 02/05/2019
+	
+	Filename: grids.css
+
+*/
+
+div.row {
+	clear: both;
+}
+
+div::after {
+	/*M3LO3 Demonstrate a clearing floats (CSS, note where you have used a clear and what its impact is)
+	Here I used clear left and clear right so the non-floated element could clear the floated element.*/
+	clear: left;
+	clear: right;
+	content: "";
+	display: table;
+}
+
+div[class^="col-"] {
+	float: left;
+}
+
+ div.row {
+	display: grid; 
+	outline: 1px solid grey;
+	/*M4LO5 Demonstrate the use of text and box shadowing (CSS)*/	
+	box-shadow: rgba(192, 192, 192, 0.4) 5px 5px 5px 5px;
+} 
+ 
+
+div.col-1-2 {
+	width: 50%;
+	outline: 1px solid grey;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	overflow: auto;
+}
+
+div.col-2-3 {
+	width: 50%;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	/*M3LO10 Demonstrate an overflow setting (CSS, note explicit use of an overflow setting in your CSS and what the impact is on the HTML)
+	Here is where I used the overflow setting to ensure that you can view the text if the width gets too small*/
+	overflow: auto;
+}
+
+body > header > img {
+	display: block;
+	width: 100%;
+	transform: scale(1, 0.7);
+	/*M4LO6 Demonstrate the use of opacity/transparency for images (see 4.2) (CSS)
+	Here is where I made the image 70% opaque on my about page*/
+}
+ 
+ div.infobox {
+	 position: absolute;
+ }
+ 
+ 
+
+
+
+
+

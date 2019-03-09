@@ -1,0 +1,85 @@
+@charset "utf-8";
+/*    
+	KITSAP MMA ONESOURCE V3
+    Author: Brian Louderback
+    Date: 02/19/2019
+	
+	Filename: flex.css
+*/
+
+
+
+footer {
+	clear: left;
+	width: 75%;
+	text-align: left;
+	caption-side: bottom;
+}
+
+/*
+M5LO6 Demonstrate use of properties of flexbox items 
+(CSS, document what flexbox item properties you use and 
+their impacts, for one CSS selector using them)
+Here is where I make the nav elements horizontal in the about page so it looks nicer.
+*/
+nav.horizontal ul {
+	display: flex;
+	flex-flow: row wrap;
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+	width: 100%;
+}
+
+nav.horizontal li {
+	flex: 1 1 auto;
+}
+/*  
+M5LO5 Demonstrate the use of flexboxes on a web page 
+(CSS document where you use flexboxes; explain their 
+impact on the page's layout; this can be a new page 
+or a redo of an existing page.
+Below is where I started defining my 4X4 flexbox in CSS.
+*/
+
+.flexbox-container {
+	display: -webkit-flex;
+	display: flex;
+}
+/*M5LO7 Demonstrate use of properties of flexbox containers 
+(CSS, document what flexbox container properties you use 
+and their impacts, for one CSS selector using them)
+Below is where I defined a 4X4 flexbox in CSS with.  
+It gives each box a width of 50% the width of the body.
+*/
+.flexbox-container > div {
+	width: 50%;
+	padding: 10px;
+}
+M5LO3 Use media queries to format a page differently for phones vs. PCs. 
+(CSS, note where these are in your CSS and describe the overall impact they have on the site)
+
+@media only and (max-width: 480px) {
+	nav.horizontal a {
+		font-size : 1.5em;
+		line-height: 2.5em;
+	}
+	
+	aside {
+		display: none;
+	}
+	
+}
+
+@media only screen and (min-width: 769px) {
+	body.version_one {
+		float: left;
+		margin-right: 5%;
+		width: 55%;
+	}
+	
+	body.version_two {
+		float: right;
+		width: 40;
+	}
+	
+}
