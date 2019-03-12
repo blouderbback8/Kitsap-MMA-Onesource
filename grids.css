@@ -4,7 +4,7 @@
     
 	KITSAP MMA ONESOURCE V2
     Author: Brian Louderback
-    Date: 02/05/2019
+    Date: 03/12/2019
 	
 	Filename: grids.css
 
@@ -15,8 +15,7 @@ div.row {
 }
 
 div::after {
-	/*M3LO3 Demonstrate a clearing floats (CSS, note where you have used a clear and what its impact is)
-	Here I used clear left and clear right so the non-floated element could clear the floated element.*/
+
 	clear: right;
 	clear: left;
 	content: "";
@@ -30,7 +29,6 @@ div[class^="col-"] {
  div.row {
 	display: grid; 
 	outline: 1px solid grey;
-	/*M4LO5 Demonstrate the use of text and box shadowing (CSS)*/	
 	box-shadow: rgba(192, 192, 192, 0.4) 5px 5px 5px 5px;
 } 
  
@@ -49,8 +47,6 @@ div.col-2-3 {
 	padding-left: 5px;
 	padding-right: 5px;
 	text-align: center;
-	/*M3LO10 Demonstrate an overflow setting (CSS, note explicit use of an overflow setting in your CSS and what the impact is on the HTML)
-	Here is where I used the overflow setting to ensure that you can view the text if the width gets too small*/
 	overflow: auto;
 }
 
@@ -58,8 +54,6 @@ body > header > img {
 	display: block;
 	width: 100%;
 	transform: scale(1, 0.7);
-	/*M4LO6 Demonstrate the use of opacity/transparency for images (see 4.2) (CSS)
-	Here is where I made the image 70% opaque on my about page*/
 }
  
  div.infobox {
