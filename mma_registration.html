@@ -1,0 +1,175 @@
+<html>  
+<head>
+	<!--
+
+    
+	KITSAP MMA ONESOURCE V3
+    Author: Brian Louderback
+    Date: 03/12/2019
+	
+	Filename: mma_registration.html
+   -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="kitsap, mma, mixed martial arts, ufc, brazilian, jiujitsu, jiu-jitsu, bjj" />
+	<link href="reset.css" rel="stylesheet" />
+	<link href="styles.css" rel="stylesheet" />
+	<script src="rb_formsubmit.js"></script>
+	</head>
+	
+	<body>
+		<header>
+
+		<figure>
+			<img src="hybrid_gym.jpg" alt="KITSAP MMA ONESOURCE" usemap="hybrid_gym_map"/>
+			<figcaption>FIGTHER REGISTRATION</figcaption>
+		</figure>
+		 
+		<nav class="horizontalNavigation" id="Links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="school_listings.html">SCHOOL LISTINGS</a></li>
+				<li><a href="mma_supplies.html">MMA SUPPLIES</a></li>
+				<li><a href="mma_registration.html">REGISTRATION</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+			</ul>
+		</nav>	
+	</body>
+	<div id="container"> 
+    
+		<h3>FIGHTER REGISTRATION</h3>	
+		
+<!--M7LO11 Demonstrate how to format a form with CSS (group your form styles together in your CSS file, and document their overall impact on the form)
+Here is where I formated a form for fighter registration-->
+		<form id="registration" action="http://www.example.com/mma/registration" method="post">
+		<fieldset id="fighterInfo">
+			<legend>Fighter Information</legend>
+			<div class="formRow">
+			
+<!--M7LO5 Demonstrate the use of a text box in a form
+Here is where I made my first text box in a form.
+ -->
+				<label for="name">Name*</label>
+				<input name="fighterName" id="name" type="text" placeholder="first and last name"/>
+			</div>
+				
+			<div class="formRow">
+				<label for="street">Street address</label>
+				<input name="fighterStreet" id="street" type="text" />
+			</div>
+				
+			<div class="formRow">
+				<label for="city">City</label>
+				<input name="fighterCity" id="city" type="text" value="Bremerton"/>
+			</div>
+				
+			<div class="formRow">
+				<label for="state">State</label>
+				<input name="fighterState" id="state" type="text" value="WA"/>
+			</div>
+				
+			<div class="formRow">
+				<label for="zip">Postal Code</label>
+				<input name="fighterZip" id="zip" type="text" placeholder="nnnnn (-nnnn)"/>
+			</div>
+				
+			<div class="formRow">
+				<label for="phone">Phone number</label>
+				<input name="fighterPhone" id="phone" type="text" placeholder="(nnn) nnn-nnnn"/>
+			</div>
+				
+			<div class="formRow">
+				<label for="mail">Email*</label>
+				<input name="fighterEmail" id="mail" type="text" />
+			</div>
+			
+<!--M7LO6 Demonstrate the use of check boxes in a form
+Hereis where I made a checkbox to subscribe to our fictitious newsletter.
+ -->		
+			<label for="mailCB">Would you like to subsribe to our newsletter?</label>
+			<input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+		
+		</fieldset>
+			
+		<fieldset id="expInfo">
+		<legend>MMA Experience</legend>
+			
+			<div class="formRow">
+				<label for="start">Began training when?</label>
+				<input name="startDate" id="visit" type="date" />
+			</div>
+			
+<!--M7LO7 Demonstrate the use of radio buttons in a form
+Here is where I made a Radio button to see if the person has competed before.
+-->			
+			<div class="formRow">
+				<label>Have you competed before?</label>
+				<fieldset class="optGroup">
+					<label for="eYes">Yes</label>
+					<input name="sExperienced" id="eYes" value="yes" type="radio" />
+					<label for="eNo">No</label>
+					<input name="sExperienced" id="eNo" value="No" type="radio" />
+				</fieldset>
+			</div>
+<!--M7LO8 Demonstrate the use of a selection list in a form
+Here is where I made a Selection list, sorry if I didn't list your favorite style of fighting.
+-->			
+			<div class="formRow">
+			<label for="style">Fighting Style</label>
+			<select name="styleType" id="style">
+				<option value="style1">MMA</option>
+				<option value="style2">BJJ</option>
+				<option value="style3">Muay Thai</option>
+				<option value="style4">Kick Boxing</option>
+				<option value="style5">Boxing</option>
+				<option value="style7">Karate</option>
+				<option value="style8">Other</option>
+			</select>
+			
+<!--M7LO9 Demonstrate the use of a text area in a form
+Here is where I made a text area to explain your fighting experience
+-->
+			<label for="commBox">Your Experience</label>
+			<textarea name="custExp" id="commBox" placeholder="Descibe your experience in MMA here."></textarea>
+
+		</fieldset>
+<!--M7LO10 Demonstrate the use of a submit button in a form
+Here is where I created a submit button for my fighter registration form.-->		
+		<fieldset id="subReg">
+		<legend>Submit Registration Here!!</legend>
+		
+		<div id="buttons">
+			<input type="submit" value="Register" />
+			<input type="reset" value="cancel" />
+		</div>
+		
+<!--M8LO8 Demonstrate the use of video in a Web page (HTML)	
+Here is where I put a video in a web page, I put captions in it as well!!-->		
+
+		<legend>A video of me doing BJJ!!!</legend>
+			<video controls>
+				<source src="mdy_bjj_video.mp4" type="video/mp4" />
+				<source src="my_bjj_video.webm" type="video/webm" />
+				<track kind="captions" label="Match Captions" src="captions.vtt" default/>
+			</video>
+		</fieldset>
+		
+		<fieldset id="otherVideo">
+		<legend>A Tribute to Brian Ortega!!!</legend>
+			<iframe width="560" height="315" 
+			src="https://www.youtube.com/embed/TrT3QFNfIL8" 
+			frameborder="0" 
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+			allowfullscreen>
+			</iframe>">
+		</fieldset>
+			
+
+			
+
+		</fieldset>
+	</form>
+	
+
+		
+</html>

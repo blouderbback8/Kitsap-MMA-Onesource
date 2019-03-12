@@ -14,8 +14,7 @@
 	<meta name="keywords" content="kitsap, mma, mixed martial arts, ufc, brazilian, jiujitsu, jiu-jitsu, bjj" />
 	<link href="reset.css" rel="stylesheet" />
 	<link href="styles.css" rel="stylesheet" />
-
-
+	<script src="rb_formsubmit.js"></script>
 	</head>
 	
 	<body>
@@ -30,18 +29,19 @@
 			 <area shape="rect" coords="226, 181, 256, 187" href="http://www.hybridgyms.com/" alt="Hydrid Gym" />
 		<header/>			 
 
-			<nav class="horizontalNavigation">
+		<nav>
+			<nav class="horizontalNavigation" id="Links">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="school_listings.html">SCHOOL LISTINGS</a></li>
 				<li><a href="mma_supplies.html">MMA SUPPLIES</a></li>
-				<li><a href="mma_resources.html">MMA RESOURCES</a></li>
+				<li><a href="mma_registration.html">REGISTRATION</a></li>
 				<li><a href="about.html">ABOUT</a></li>
 			</ul>
-	</nav>	
+		</nav>	
 	</body>
 	<!--M6LO3 Demonstrate how to create a table (HTML)
-	Below is where I created a table to display the average prices of schools that can help with MMA, according to me.
+	
 	 -->
 	<div id="container"> 
     <section id="main">
@@ -84,5 +84,50 @@
 			-->
 			<td colspan="3"><cite>DISCLAIMER:&nbsp ALL PRICES MAY BE SUBJECT TO CHANGE!!!!</cite></td>
 		</tr>
+		
+		<form id="registration" action="http://www.example.com/mma/registration" method="post">
+			<fieldset id="fighterInfo">
+				<legend>Fighter Information</legend>
+				<div class="formRow">
+				<label for="name">Name*</label>
+				<input name="fighterName" id="name" type="text" />
+				</div>
+				
+				<div class="formRow">
+				<label for="street">Street address</label>
+				<input name="fighterStreet" id="street" type="text" />
+				</div>
+				
+				<div class="formRow">
+				<label for="city">City</label>
+				<input name="fighterCity" id="city" type="text" value="Bremerton"/>
+				</div>
+				
+				<div class="formRow">
+				<label for="state">State</label>
+				<input name="fighterState" id="state" type="text" value="WA"/>
+				</div>
+				
+				<div class="formRow">
+				<label for="zip">Postal Code</label>
+				<input name="fighterZip" id="zip" type="text" value="98303"/>
+				</div>
+				
+				<div class="formRow">
+				<label for="phone">Phone number</label>
+				<input name="fighterPhone" id="phone" type="text" />
+				</div>
+				
+				<div class="formRow">
+				<label for="mail">Email*</label>
+				<input name="fighterEmail" id="mail" type="text" />
+				</div>
+				
+			</fieldset>
+			
+			<fieldset id="expInfo">
+			<legend>MMA Experience</legend>
+			</fieldset>
+		</form>
 
 </html>

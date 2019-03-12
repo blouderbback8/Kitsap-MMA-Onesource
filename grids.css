@@ -17,8 +17,8 @@ div.row {
 div::after {
 	/*M3LO3 Demonstrate a clearing floats (CSS, note where you have used a clear and what its impact is)
 	Here I used clear left and clear right so the non-floated element could clear the floated element.*/
-	clear: left;
 	clear: right;
+	clear: left;
 	content: "";
 	display: table;
 }

@@ -3,7 +3,7 @@
 /*
 	KITSAP MMA ONESOURCE V3
     Author: Brian Louderback
-    Date: 02/19/2019
+    Date: 03/10/2019
 	
 	Filename: styles.css
 */
@@ -32,6 +32,7 @@ header {
 	color: white;
 	text-align: center;
 }
+
 
 body > header > img {
 	display: block;
@@ -144,18 +145,14 @@ section#RightColumn {
 	transform: skew(-18deg, -18deg)
 }
 
-/*M5LO4 Use CSS for pull down menus (CSS)
-Below is where I used CSS for a pull down menu.
-*/
+
 ul.submenu {
 	display: none;
 }
 a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
 	display: block;
 }
-/*M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML)
-Below until the "@media only and (max-width: 480px)" is the formating of my table with CSS.  I made the background gray, a 5px border dark gray,
-centered the text, made the width 100%, made a 1px border between the td's and th's, and then collapse the borders.*/
+
 table.prices {
 	background: gray;
 	border: 5px outset rgb(169, 169, 169);
@@ -168,7 +165,72 @@ table.prices th, table.prices td {
 	border: 1px solid black;
 }
 
+div.formRow {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 5px 1px;
+}
 
+div.formRow > * {
+	webkit-flex: 1 1 150px;
+	flex: 1 1 160px;
+}
+
+form#registration {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+form#registration > fieldset {
+	background-color: rgb(169, 169, 169);
+	border-radius: 15px;
+	-webkit-flex: 1 1 300px;
+	flex: 1 1 300px;
+	font-size: 0.88em;
+	padding: 10px;
+	margin: 10px;
+}
+
+legend {
+	background-color: rgb(169, 169, 169);
+	color: white;
+	padding: 5px;
+}
+
+textarea {
+	margin-top: 10px;
+	height: 100px;
+	width: 96%;
+}
+
+video {
+	box-shadow: rgb(51, 65, 60) 10px 10px 20px;
+	display: block;
+	margin: 20px auto;
+	width: 80%;
+}
+
+/*M8LO12 Demonstrate how to format media with CSS (CSS, group your media styles together and describe their overall impact on the media feature of your page)
+Here is where I made my captions to my BJJ match blue video.  You can see them in Firefox.*/
+::cue {
+	background: rgba(0, 0, 0, 0.5);
+	color: blue;
+	font: 1.3em serif;
+}
+
+/*M8LO10 Demonstrate a CSS animation or transition (CSS, identify which is being done and its impact on the rendered HTML)
+Here is where I created a Hover Transition on  my Nav Links.*/
+
+nav#Links a:hover {
+	color: rgb(165, 175, 170);
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	text-shadow: rgba(0, 0, 0, 0.5) 15px -5px 10px;
+}
 
 
 
